@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Cheap Deals for Students</title>
+  <title><?php echo $this->title; ?></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -21,9 +21,9 @@
 
       <section class="top-bar-section">
         <ul class="right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="index.php?page=home">Home</a></li>
+          <li><a href="index.php?page=about">About Us</a></li>
+          <li><a href="index.php?page=contact">Contact Us</a></li>
           <li class="show-for-large-up">
             <form action="search.html" method="get">
               <div class="row collapse">
@@ -36,10 +36,10 @@
               </div>
             </form>
           </li>
-          <li class="has-dropdown"><a href="account.html">Account</a>
+          <li class="has-dropdown"><a href="index.php?page=account">Account</a>
             <ul class="dropdown">
-              <li><a href="register.html">Register</a></li>
-              <li><a href="login.html">Login</a></li>
+              <li><a href="index.php?page=register">Register</a></li>
+              <li><a href="index.php?page=login">Login</a></li>
             </ul>
           </li>
         </ul>
